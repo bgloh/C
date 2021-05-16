@@ -43,8 +43,8 @@ int Menu_Delete(Pbook pb[], int* idx)
 				strcpy_s(pb[k].name, LEN, pb[k + 1].name);
 				strcpy_s(pb[k].phone, LEN, pb[k + 1].phone);
 			}
-			strcpy_s(pb[*idx - 1].name, LEN, "\0");
-			strcpy_s(pb[*idx - 1].phone, LEN, "\0");
+			//strcpy_s(pb[*idx - 1].name, LEN, "\0");
+			//strcpy_s(pb[*idx - 1].phone, LEN, "\0");
 			(*idx)--;
 			return 1;
 		}
