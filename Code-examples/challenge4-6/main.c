@@ -6,18 +6,18 @@
 int main()
 {
 
-	int num; 
+	int num;
 	Pbook pb[BLEN];
-	int pbidx = 0; 
-	int del; 
-	int ser; 
+	int pbidx = 0;
+	int del;
+	int ser;
 
 	while (1)
 	{
-		Menu(&pbidx); 
+		Menu(&pbidx);
 
 		do {
-			printf("Choose the menu: "); scanf_s("%d", &num);
+			printf("Choose the menu: "); scanf("%d", &num);
 		} while (num < 1 || num>5);
 
 		switch (num)
