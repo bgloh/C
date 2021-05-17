@@ -22,8 +22,8 @@ int Menu_Insert(Pbook pb[], int* idx)
 		return -1;
 
 	puts("[INSERT]");
-	printf("Input Name : "); scanf("%s", pb[*idx].name, LEN);
-	printf("Input Tel Number : "); scanf("%s", pb[*idx].phone, LEN);
+	printf("Input Name : "); scanf("%s", pb[*idx].name);
+	printf("Input Tel Number : "); scanf("%s", pb[*idx].phone);
 	(*idx)++;
 	return 0;
 }
