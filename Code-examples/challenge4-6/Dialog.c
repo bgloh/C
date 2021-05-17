@@ -37,7 +37,7 @@ int Menu_Delete(Pbook pb[], int* idx)
 		return -1;
 
 	puts("[DELETE]");
-	printf("Deleted Name : "); scanf("%s", dname, LEN);
+	printf("Deleted Name : "); scanf("%s", dname);
 	for (int i = 0; i < *idx; i++) {
 		if (strcmp(pb[i].name, dname) == 0) {
 			for (int k = i; k < *idx - 1; k++) {
