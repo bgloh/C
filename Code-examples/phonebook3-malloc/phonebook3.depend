@@ -1,0 +1,40 @@
+# depslib dependency file v1.0
+1621691312 source:c:\users\brian\documents\phonebook3\dialog.c
+	<stdio.h>
+	<string.h>
+	"Dialog.h"
+
+1621690827 c:\users\brian\documents\phonebook3\dialog.h
+
+1621691368 source:c:\users\brian\documents\phonebook3\main.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"Dialog.h"
+
+1621691312 source:c:\users\brian\documents\c\code-examples\phonebook3\dialog.c
+	<stdio.h>
+	<string.h>
+	"Dialog.h"
+
+1621690827 c:\users\brian\documents\c\code-examples\phonebook3\dialog.h
+
+1621691368 source:c:\users\brian\documents\c\code-examples\phonebook3\main.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"Dialog.h"
+
+1621691312 source:c:\users\brian\documents\c\code-examples\phonebook3-malloc\dialog.c
+	<stdio.h>
+	<string.h>
+	"Dialog.h"
+
+1621690827 c:\users\brian\documents\c\code-examples\phonebook3-malloc\dialog.h
+
+1621691368 source:c:\users\brian\documents\c\code-examples\phonebook3-malloc\main.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"Dialog.h"
+
