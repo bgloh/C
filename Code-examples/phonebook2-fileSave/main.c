@@ -27,11 +27,24 @@ int main()
 
 		}
 
-		/*  EOF »ç¿ë¹ı
-        int i=0;
-		while(fscanf(fpr, "%s %s", pb[i].name, pb[i].phone) != EOF)
-        i++;
-        */
+		/*  EOF ì‚¬ìš©ë²•
+                 //int i=0;
+		 //while(fscanf(fpr, "%s %s", pb[i].name, pb[i].phone) != -1)
+                 // i++;
+		int ret;  // fscanf response
+                int i=0;  // pb index
+                while(1)
+                {
+                     ret = fscanf(fpr,"%s %s",pb[i].name,pb[i].phone);
+                     if (ret==-1)
+                       {
+                          pbidx = i;
+                          break;
+                       }
+                     else
+                       i++;
+                 }
+		 */
 
 		fclose(fpr);
 	}
@@ -49,7 +62,7 @@ int main()
 		{
 		case Insert:
 			if (Menu_Insert(pb, &pbidx) == -1) {
-				puts("ÀüÈ­¹øÈ£ºÎ°¡ ²Ë Ã¡½À´Ï´Ù.\n");
+				puts("ì „í™”ë²ˆí˜¸ë¶€ê°€ ê½‰ ì°¼ìŠµë‹ˆë‹¤.\n");
 			}
 			else
 				puts("\t\t Data Inserted \n");
@@ -57,18 +70,18 @@ int main()
 		case Delete:
 			del = Menu_Delete(pb, &pbidx);
 			if (del == -1) {
-				puts("ÀüÈ­¹øÈ£ºÎ°¡ ºñ¾îÀÖ½À´Ï´Ù.\n");
+				puts("ì „í™”ë²ˆí˜¸ë¶€ê°€ ë¹„ì–´ìˆìŠµë‹ˆë‹¤.\n");
 			}
 			else if (del == 1)
 				puts("\t\t Data Deleted \n");
 			else {
-				puts("ÀÏÄ¡ÇÏ´Â µ¥ÀÌÅÍ°¡ ¾ø½À´Ï´Ù. \n");
+				puts("ì¼ì¹˜í•˜ëŠ” ë°ì´í„°ê°€ ì—†ìŠµë‹ˆë‹¤. \n");
 			}
 			break;
 		case Search:
 			ser = Menu_Search(pb, &pbidx);
 			if (ser == -1) {
-				puts("Ã£À¸½Ã´Â µ¥ÀÌÅÍ°¡ ¾ø½À´Ï´Ù. \n");
+				puts("ì°¾ìœ¼ì‹œëŠ” ë°ì´í„°ê°€ ì—†ìŠµë‹ˆë‹¤. \n");
 			}
 			else {
 				printf("Name : %s \t Tel : %s \n\n", pb[ser].name, pb[ser].phone);
